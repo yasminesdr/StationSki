@@ -30,4 +30,12 @@ public class Moniteur implements Serializable {
     @JsonIgnore
     private Set<Cours> coursSet;
 
+    public Moniteur(Integer idMoniteur, Long numMoniteur, String nomM, String prenomM, LocalDate dateRecru, float prime) {
+        this.idMoniteur = idMoniteur;
+        this.numMoniteur = numMoniteur;
+        this.nomM = nomM;
+        this.prenomM = prenomM;
+        this.dateRecru = dateRecru;
+        this.prime = prime;
+    }
 }
